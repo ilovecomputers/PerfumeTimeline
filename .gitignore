@@ -1,0 +1,5 @@
+.idea
+
+# To save on repo size and the complexity of dealing with changes in a packed file, I am not saving the sketch files
+# referenced in the dev notes. Contact me if you really want them
+*.sketch

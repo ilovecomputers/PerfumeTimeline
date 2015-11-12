@@ -1,0 +1,18 @@
+/* The *-flex was intended for timeline's children to be laid in a row. The inline-* was set so the timeline expands
+   it's width to fit it's children instead of shrinking them to fit the viewport. */
+.timeline {
+    display: inline-flex;
+}
+
+/* A unit of time's width is half of the viewport's height. */
+.unit-of-time {
+    display: flex;
+    flex-direction: column;
+    width: calc(100vh / 2);
+}
+
+/* An event has a height that is one third the viewport's height and it's width should expand to fit
+   it's containing block */
+.event {
+    height: calc(100vh / 3);
+}
