@@ -31,12 +31,20 @@ Horizontal Layout Rules:
 
 [ ] **Objective: Gather the media assets from the video**
 
-* [ ] For each asset (e.g. music video or album release photo), research info about it (release year, anecdotes, where to buy, credits)
-* [ ] Create a mm doc that lists the source of the video or image and their years
+* [ ] For each asset (e.g. music video or album release photo), research info about it (release date, anecdotes, where to buy)
+	* no point in adding credits. They're almost all produced by Nakata Yasutaka lol
+	* [ ] Create a JSON doc that lists this info
+		* [ ] Write script that'll grab [singles and album releases from generasia website](http://www.generasia.com/wiki/Template:Perfume)
+		* [ ] Write script that'll grab [the MVs from YouTube](https://www.youtube.com/user/Perfume/search?query=mv)
+			* Note the dates for the official videos are in the description
+			* [ ] How to grab video clips?
+		* [ ] Make sure the description isn't dry. Might have to go to the history section of wiki and generasia for interesting anecdotes surrounding that release
 
 _Avoid premature performance optimization:_
 
 * You should be fine with CSS transforms
+* [ ] After you complete timeline, make sure you got most of media asset from [the  video](https://www.youtube.com/watch?v=iJoFOqoIEv0)
+	* You'll likely be missing video from live performances
 * [ ] After you complete timeline, _check layout on iPhone and iPad (w/o retina)_
 * [ ] After you complete timeline, do some performance analysis on it with Chrome Dev Tool
 	* Info on hardware-accelerated CSS

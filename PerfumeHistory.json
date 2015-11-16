@@ -1,0 +1,58 @@
+[
+  {
+    "Title": "Polyrhythm",
+    "Date": "2007/09/12",
+    "Media": "Polyrhythm(CDDVD).jpg",
+    "Type": "single",
+    "Description": "Polyrhythm is Perfume's fifth major label single, and tenth overall. Although the sales for \"Fan Service: sweet\" were not stellar, \"Chocolate Disco\" did catch the attention of an already well-established artist in the J-pop industry, Kimura Kaela. Kimura then played Perfume's music on her radio show consistently. While listening to Kimura's radio show, a commercial director named Akira Tomotsugi noticed Perfume and decided to use the three girls in an upcoming TV ad. On July 1, 2007, the commercial for NHK's national recycling campaign aired, featuring Perfume and a new song, \"Polyrhythm\". The commercial gave Perfume exposure they could have only dreamed of before. Subsequently, their next live show sold out",
+    "BuyUrl": {
+      "iTunes": "https://itunes.apple.com/us/album/polyrhythm-ep/id661480654",
+      "Amazon": "http://amzn.com/B000TCU3JM"
+    },
+    "MoreInfoUrl": "http://www.generasia.com/wiki/Polyrhythm"
+  },
+  {
+    "Title": "Game",
+    "Date": "2008/04/16",
+    "Media": "GAME (CDDVD).jpg",
+    "Type": "album",
+      "Description": "Their first original album, GAME. The album reached #1 on the Oricon charts upon its release, making Perfume the first technopop group to achieve this since Yellow Magic Orchestra in 1983. Amazingly, at the time of the album's release, Perfume ~Complete Best~, \"Polyrhythm\", and \"Baby cruising Love / Macaroni\" all re-entered the Oricon charts. The album went on to sell over 450,000 copies and was certified double platinum.",
+      "BuyUrl": {
+        "iTunes": "https://itunes.apple.com/us/album/game/id661938289",
+        "Amazon": "http://amzn.com/B00132S3SK",
+        "Spotify": "https://open.spotify.com/album/6kzdxF5o6XpDNTLVVdjoMj"
+      },
+      "Tracks": [
+        {
+          "Name": "Polyrhythm (ポリリズム)",
+          "EventLink": "/2007/09/12/Polyrhythm"
+        },
+        "plastic smile",
+        "GAME",
+        "Baby cruising Love",
+        "Chocolate Disco (チョコレイト・ディスコ)",
+        "Macaroni (マカロニ)",
+        "Ceramic Girl (セラミックガール)",
+        "Take me Take me",
+        "Secret Secret (シークレットシークレット)",
+        "Butterfly",
+        "Twinkle Snow Powdery Snow",
+        "Puppy love"
+      ],
+      "MoreInfoUrl": "http://www.generasia.com/wiki/Game_(Perfume)"
+  },
+  {
+    "Title": "Linear Motor Girl",
+    "Date": "2005/09/21",
+    "Media": "LinearMotorGirlMVClip.mov",
+    "Type": "music video",
+    "YouTubeUrl": "https://www.youtube.com/watch?v=9P9eZBvucR0"
+  },
+  {
+    "Title": "AKIHABALOVE",
+    "Date": "2005/08/29",
+    "Media": "AKIHABALOVELiveClip.mov",
+    "Type": "performance",
+    "YouTubeUrl": "https://www.youtube.com/watch?v=CAkJy5DLcLc"
+  }
+]
