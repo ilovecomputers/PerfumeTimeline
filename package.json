@@ -1,0 +1,8 @@
+{
+  "name": "PerfumeTimeline",
+  "version": "0.0.1",
+  "devDependencies": {
+    "cheerio": "^0.19.0",
+    "request": "^2.65.0"
+  }
+}
