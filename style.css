@@ -1,18 +1,24 @@
-/* The *-flex was intended for timeline's children to be laid in a row. The inline-* was set so the timeline expands
-   it's width to fit it's children instead of shrinking them to fit the viewport. */
+/* The flex layout is set so that flex-items (the events) are laid out starting from the top-left, then one below the other, and then wrap up to the next column. */
 .timeline {
-    display: inline-flex;
+    display: flex;
+    align-content: flex-start;
+    flex-flow: column wrap;
+
+    /* To prevent an element from jotting out from below and creating a horizontal scroll bar, the timeline forces a strict vertical scroll. This is achieved by having a height the size of the viewport's and anything that goes below the viewport's bottom is hidden.*/
+    overflow-y: hidden;
+    height: 100vh;
 }
 
-/* A unit of time's width is half of the viewport's height. */
-.unit-of-time {
-    display: flex;
-    flex-direction: column;
+/* An event has a height that is one third the viewport's height and a width that is half of the viewport's height. This gives it a 2:3 ratio dimension */
+.event {
+    height: calc(100vh / 3);
     width: calc(100vh / 2);
 }
 
-/* An event has a height that is one third the viewport's height and it's width should expand to fit
-   it's containing block */
-.event {
-    height: calc(100vh / 3);
+.event img, .event video {
+    /* Media inside an event will be shifted around to make room. This will also prevent other event divs from overlapping and covering them up */
+    position: relative;
+
+    /* By default, media will expand horizontally to fit the event */
+    width: 100%;
 }

@@ -38,6 +38,7 @@ Horizontal Layout Rules:
 			* Note the dates for the official videos are in the description
 			* [ ] How to grab video clips?
 		* [ ] Make sure the description isn't dry. Might have to go to the history section of wiki and generasia for interesting anecdotes surrounding that release
+* [ ] Write script to transform JSON to html
 
 _Avoid premature performance optimization:_
 
@@ -103,12 +104,10 @@ Created [a mockup file](Non-code%20Project%20files/Mockups.sketch), so far it on
 
 [ ] **Objective: Create the base timeline layout in flexbox**
 
-* [ ] Create a unit of time layout with just class'd divs
+* [X] Create a unit of time layout with just class'd divs
 	* [X] Base unit-of-time and event size based on a percentage of the viewport
 * [X] Setup Git and add these notes into the repo
-* [ ] Setup workspace in chrome so CSS changes in the dev tool are reflected in source
-* [ ] Figure out how to create custom \<unitOfTime> & \<event> elements using web components
-* [ ] Create a timeline (horizontal arrangement of unit of times) 
+* [X] Setup workspace in chrome so CSS changes in the dev tool are reflected in source
 
 ### October 21 2015 ###
 
@@ -122,14 +121,7 @@ The flex container, `.timeline`,  is causing all the `.unit-of-time`s to shrink 
 To fix this, I _could_ set the unit of times to flex none, but instead I set `display: inline-flex` on the timeline in order to make it stretch to the size of its children instead of the viewport.  This also caused it to overflow out of its containing block: the body. Keep in mind, this sets the container-block to be an inline element instead of a block one, it does _not_ change the display of the child elements, they remain flex-items.
 
 ### Realized the Strict "3 Events Per Unit-of-Time" Is Wrong. ###
-There can be multiple events in a unit-of-time, so we need to allow the unit-of-time to `flex-wrap` it's events. 
-
-[ ] Rethink about how to lay it out so that three events are in a single column, but in html, there are multiple events in a unit-of-time: 
-
-* I think it will be best to set the dimensions of events to 3:2
-* Since I'm not using flex for dimension calculation and just want horizontal positioning, best to make the columns inline-blocks
-* Right now, if you increase the height of an element, you're able to scroll up and down, which is not what we want.
-* The height of the unit-of-time should expand to fit the viewport's height, allow overflow, and the event instead should have it's width be half the viewports
+There can be multiple events in a unit-of-time. Now that I think about it, there is no point of a unit of time. It doesn't exist to maintain any semantic meaning nor add any css rules. It's just a timeline with events (and other flex-items like the years) laid out in a column and wrapping around (in a up-and-down motion).
 
 #### My Grid Overlaid on the Perfume Video ####
 
@@ -137,6 +129,17 @@ There can be multiple events in a unit-of-time, so we need to allow the unit-of-
 
 This gives me a good idea of how randomly placed images/videos appear in relation to the horizontal layout
 
+### January 12 2016 ###
+
+* [X] Fill html with placeholder images and video clips
+	* To further experiment with layout to match original Perfume video
+	* Offset these images' top and left property to prevent overlapping (there won't be buffer empty event divs like the ones I have in the prototype)
+		* It's clear from this experiment that I will have to figure out some image placement algorithm that will prevent...nah too much work will go into that. Spend a bit more time doing it by hand.
+	* [Reading into html5 video](http://diveinto.html5doctor.com/video.html), I learned that I can use one tag to point to multiple sources. I can point to [video loops hosted on gfycat](http://gfycat.com/search/perfume) where they are both Webm and Mp4 (to play on browsers that don't support WebM). On iPhone, to have moving images as you scroll, I could try [a gif as a poster.](http://stackoverflow.com/questions/15500154/display-fallback-image-even-if-the-browser-supports-html5-video) I could also then, finally, point to video I host if gfycat goes belly up.
+
+### January 24 2016 ###
+*  [ ] Setup [chrome workspace](https://developers.google.com/web/tools/setup/setup-workflow?hl=en) so that placement and dimension changes you do on the browser are persisted in the files
+	*  [ ] From there maybe script up a map between click and drags to css updates
 
 
 
