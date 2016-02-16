@@ -7,7 +7,7 @@ import * as _request from 'request';
 import * as fs from 'fs';
 
 var topLevelDomain:string = 'http://www.generasia.com';
-var jsonLocation:string = '../data/PerfumeHistory.json';
+var jsonLocation:string = '../Script Assets/PerfumeHistory.json';
 
 createDiscographyJson();
 
@@ -77,6 +77,7 @@ async function transformUrlToDiscography(discography) {
     if(discography.type === "album") {
        discography.tracks = getTracks($);
     }
+    discography.cover = getCoverImage($);
 
     return discography
 }
@@ -110,6 +111,14 @@ function getTracks($:CheerioStatic) {
         .map(function (line:String) {
             return line.trim();
         })
+        ;
+}
+
+function getCoverImage($:CheerioStatic):any {
+    return topLevelDomain + $('#content')
+        .find('img')
+        .first()
+        .attr('src')
         ;
 }
 

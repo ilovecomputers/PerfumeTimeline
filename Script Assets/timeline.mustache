@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Timeline Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="timeline">
+    {{#.}}
+        <div class="event">
+            {{#cover}}
+                <img src="{{{.}}}">
+            {{/cover}}
+        </div>
+    {{/.}}
+</div>
+</body>
+</html>
